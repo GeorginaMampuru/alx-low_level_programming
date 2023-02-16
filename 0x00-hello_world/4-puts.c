@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Description:should prints out a string to stdout.
+ * Description: main - should prints out a string to stdout using puts.
  * Return: 0 if success.
  */
 int main(void)
