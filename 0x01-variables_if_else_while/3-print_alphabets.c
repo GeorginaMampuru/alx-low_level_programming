@@ -20,12 +20,13 @@ int main(void)
 
 	putchar(small);
 	}
-	 for (x = 'A'; x <= 'Z'; x++)
-        {
-        char upper = x;
 
-        putchar(upper);
-        }
+	for (x = 'A'; x <= 'Z'; x++)
+	{
+	char upper = x;
+
+	putchar(upper);
+	}
 	putchar('\n');
 
 	return (0);
