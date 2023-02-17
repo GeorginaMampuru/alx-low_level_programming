@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 #include <unistd.h>
-#include <cstdlib>
 
 /**
  * Description: main - print n as if >0  positive or negative of <0.
@@ -16,15 +16,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-	printf("is positive");
+	printf("is positive\n");
 	}
 	else if (n < 0)
 	{
-	printf("is negative");
+	printf("is negative\n");
 	}
-	else if (n = 0)
+	else if (n == 0)
 	{
-	printf("is zero");
+	printf("is zero\n");
 	}
 	return (0);
 }
