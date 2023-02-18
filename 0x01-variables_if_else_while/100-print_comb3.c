@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -16,7 +15,6 @@ int main(void)
 
 	for (x = '0'; x < '9'; x++)
 	{
-	
 	for (z = '0'; z <= '9'; z++)
 	{
 	if (x != z)
