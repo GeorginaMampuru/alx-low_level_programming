@@ -11,10 +11,10 @@
 int main(void)
 {
 
-	char x,q,e;
+	char x, q, e;
 
 	e = 'e';
-	q ='q';
+	q = 'q';
 
 
 	for (x = 'a'; x <= 'z'; x++)
