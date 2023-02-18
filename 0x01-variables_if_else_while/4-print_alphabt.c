@@ -16,7 +16,6 @@ int main(void)
 	e = 'e';
 	q = 'q';
 
-
 	for (x = 'a'; x <= 'z'; x++)
 	{
 		if (x != q && x != e)
@@ -25,6 +24,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
