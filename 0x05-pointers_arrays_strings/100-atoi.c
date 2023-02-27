@@ -1,33 +1,27 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <ctype.h>
+#include "main.h"
+
 /**
-* Description: main - prints diffrent result as n is either =>< 5
-* Return: 0 if success.
-*/
-
-int main(void)
+ * _atoi - converts a string to an integer
+ * @s: the string to be converted
+ * Return: the integer value of the converted string
+ */
+int _atoi(char *s)
 {
+	int sign = 1;
+	unsigned int num = 0;
 
-	int x, z;
-
-	for (x = '0'; x < '9'; x++)
+	while (!('0' <= *s && *s <= '9') && *s != '\0')
 	{
-	for (z = '0'; z <= '9'; z++)
+		if (*s == '-')
+			sign *= -1;
+		if (*s == '+')
+			sign *= +1;
+		s++;
+	}
+	while ('0' <= *s && *s <= '9' && *s != '\0')
 	{
-	if (x != z && x < z)
-	{
-	putchar(x);
-	putchar(z);
-	if (x == '8' && z == '9')
-	continue;
-	putchar(',');
-	putchar(' ');
+		num = (num * 10) + (*s - '0');
+		s++;
 	}
-	}
-	}
-	putchar('\n');
-	return (0);
+	return (num * sign);
 }
