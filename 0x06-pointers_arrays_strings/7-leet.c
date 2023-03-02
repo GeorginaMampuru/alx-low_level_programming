@@ -1,3 +1,5 @@
+
+
 #include "main.h"
 
 /**
@@ -8,14 +10,14 @@
 char *leet(char *str)
 {
 	int i, j;
-	char *replace = "a4A4e3E3o0O0t7T7l1L1";
+	char *replace = "aAeEoOtTlL4433007711";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 20; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			if (str[i] == replace[j])
-				str[i] = replace[j + 1];
+				str[i] = replace[j + 10];
 		}
 	}
 	return (str);
