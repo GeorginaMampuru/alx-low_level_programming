@@ -12,7 +12,7 @@ char *leet(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 20; j+2)
+		for (j = 0; j <= 20; j++)
 		{
 			if (str[i] == replace[j])
 				str[i] = replace[j + 1];
