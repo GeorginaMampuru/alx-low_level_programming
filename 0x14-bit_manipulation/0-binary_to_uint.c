@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * check_valid_string - checks if the string is a valid binary
+ * check_valid_string - checks if a string is a valid binary
  * @b: string to be checked
  *
- * Return: 1 if string is valid, 0 otherwise
+ * Return: 1 if string is valid and 0 if not
  */
 
 int check_valid_string(const char *b)
@@ -28,12 +28,14 @@ int check_valid_string(const char *b)
  * @b: the binary number as a string
  *
  * Return: the converted value
+ *
  */
 
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0;
-	int str_len = 0, base = 1;
+	int str_len = 0;
+	int base = 1;
 
 	if (!check_valid_string(b))
 		return (0);
